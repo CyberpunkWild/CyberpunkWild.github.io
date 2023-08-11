@@ -1,63 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CP2020Wild Home</title>
-<link rel="icon" type="image/x-icon" href="amog me emote.png">
+<title>BOOKS</title>
+<link rel="icon" type="image/x-icon" href="../amog me emote.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
+
+
+
+/*                                         BOOKS                             */
 * {
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.container {
-	width: auto;
-    white-space: pre-wrap;
-}
-h2 {
-	color: white;
-	text-align: center;
-}
-p {
-	color: white;
-	text-align: center;
-}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #1f1f1f;
 }
 
-/* Style the side navigation */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
+h1 {
+	text-align:center;
+}
+h2 {
+	text-align:center;
+}
+h3 {
+	text-align:center;
+}
+p {
+	text-align:left;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-
-/* Side navigation links */
-.sidenav a {
-  color: darkgray;
-  padding: 16px;
-  text-decoration: none;
+/* Style the topnav links */
+.topnav a {
+  float: left;
   display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Change color on hover */
-.sidenav a:hover {
-  background-color: #474747;
-  color: white;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 /* Style the content */
 .content {
-  margin-left: 200px;
-  padding-left: 20px;
+  background-color: #1f1f1f;
+  color: lightgray;
+  padding: 10px;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
 }
 .center {
   display: block;
@@ -65,37 +74,74 @@ body {
   margin-right: auto;
   width: 50%;
 }
+#rightA {
+	text-align: right;
+}
+
+.container {
+	width: auto;
+    white-space: pre-wrap;
+}
+.button {
+  background-color: yellow; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
 </style>
 </head>
 <body>
 
-<div class="sidenav">
-  <a href="Characters/default">Characters</a>
-  <a href="Story/default">Story</a>
-  <a href="Background/default">Background</a>
-  <a href="Gear/default">Gear</a>
-  <a href="Goons/default">Goons</a>
-  <a href="Player/default">Player Characters</a>
-  <a href="books/default">Rule Books</a>
+<div class="topnav">
+  <a href="#">Josh</a>
+  <div id = rightA>
+  <img src="../CyberpunkWildLogo.png" style="width:100px">
+  </div>
 </div>
 
 <div class="content">
-  <img src="../CyberpunkWildLogo.png" alt="balls" class="center">
-  <h2>Notes:</h2>
+  <h1></h1>
+  <h2> [NEW RULES] </h2>
   <div class="container">
-  <p> So players in a sim, run by Mike. once players out of sim, see mike and then immediately kill mike again. 
-  Then find they are in another sim, run by me…
+  <p class="center">
+  --Corpo and Netrunner should not be played, as their utility as a class wouldn't be the best (can still play)
+  --MAX character points is 60, recommended to start with 55, but you CAN roll if you want
+  --MAX limit for class specific skill, like combat sense, is 4
+  --40 points for Career skills, but only ONE career skill can be up to 7, TWO up to 6, and the rest max of 5
+  --30 points for Pickup Skills, but only ONE is max 6, rest are max of 5
+  --dont have to have one skill be 7, or 6, can spread them out...
+  --Rep is automatically 1, can go negative for infamy
+  --EVERYONE starts with 2000 $E, dont NEED bills, but if you want to be homeless thats on you
+  --Cannot sell body parts (kidney) unless in game
+  --RARE/POOR weapons cannot be bought in creation, and you cannot buy anything but a pistol, SMG, sword in creation
+  
+                                             <b>There will be ways to improve skill, trust!</b></p>
+</div>
 
-We GOTTA add Obama
+<h2> [BOOKS] </h2>
+<div class="center">
+<a href="Cyberpunk 2020 - CP3002 Core Rulebook v2.01 (new art).pdf" class="button">Core Rulebook</a>
+<a href="Cyberpunk 2020 - Chromebook 1.pdf" class="button">Chromebook 1</a>
+<a href="Cyberpunk 2020 - Chromebook 2.pdf" class="button">Chromebook 2</a>
+<a href="Cyberpunk 2020 - Chromebook 3.pdf" class="button">Chromebook 3</a>
+<a href="Cyberpunk 2020 - Chromebook 4.pdf" class="button">Chromebook 4</a>
+</div>
+<h3>3rd Party Books: </h3>
+<div class="center">
+<a href="Datafortress 2020 - Interlock Unlimited - Core Rules 7-7-14.pdf" class="button">DataFort Core</a>
+<a href="Cyberpunk 2020 - Datafortress 2020 - Corporate-Military Catalog.pdf" class="button">DataFort Mil Catalog</a>
+<a href="Datafortress 2020 - Interlock Unlimited - Vehicles  Unlimited.pdf" class="button">DataFort Vehicles</a>
+<a href="Datafortress 2020 - Interlock Unlimited - Vehicles  Unlimited.pdf" class="button">DataFort Powers</a>
+<a href="Datafortress 2020 - Interlock Unlimited - Vehicles  Unlimited.pdf" class="button">DataFort Magic</a>
 
-then get rolls done, then gear
-add link to [old characters] in background
 
-</p>
 </div>
 </div>
-
 </body>
 </html>
-
 
