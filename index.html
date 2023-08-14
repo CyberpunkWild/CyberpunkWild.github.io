@@ -64,14 +64,67 @@ p {
 }
 
 /* Style the footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 10px;
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
 }
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 50%;
+}
+.right {
+  display: block;
+  margin-left: auto;
+  margin-right: 0px;
   width: 50%;
 }
 #rightA {
@@ -109,7 +162,7 @@ p {
     white-space: pre-wrap;
 }
 .button {
-  background-color: yellow; /* Green */
+  background-color: yellow; /* Green   */
   border: none;
   color: black;
   padding: 15px 32px;
@@ -122,20 +175,24 @@ p {
 </style>
 </head>
 <body>
-<div class="sidenav">
-  <a href="Store\default.html">Store</a>
- </div>
-<div class="topnav">
-  <div id = rightA>
-  <img src="../CyberpunkWildLogo.png" style="width:100px">
-  </div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="./Store/default.html">Store</a>
 </div>
 
+<div id="main">
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+  
+</div>
+
+
 <div class="content">
-  <h1></h1>
+  <img src="./CyberpunkWildLogo.png" style="width:200px" class="center">
   <h2> [NEW RULES] </h2>
   <div class="container">
   <p class="center">
+  --Corpo and Netrunner should not be played, as their utility as a class wouldn't be the best (can still play)
   --MAX character points is 60, recommended to start with 55, but you CAN roll if you want
   --MAX limit for class specific skill, like combat sense, is 4
   --40 points for Career skills, but only ONE career skill can be up to 7, TWO up to 6, and the rest max of 5
@@ -145,8 +202,7 @@ p {
   --EVERYONE starts with 2000 $E, dont NEED bills, but if you want to be homeless thats on you
   --Cannot sell body parts (kidney) unless in game
   --RARE/POOR weapons cannot be bought in creation, and you cannot buy anything but a pistol, SMG, sword in creation
-  --Also no superpowers or magic, but there might be a way to get some in the game...
-  --there are more in game rules, just gotta list them
+  --New smart gun buying mechanics. Need to buy smart bullets for smart gun (5x price)
   
                                              <b>There will be ways to improve skill, trust!</b></p>
 </div>
@@ -171,6 +227,22 @@ p {
 
 </div>
 </div>
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+   
 </body>
 </html>
 
