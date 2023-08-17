@@ -104,7 +104,7 @@ color: lightgray;
 
 <div class="content">
     <input type="number" id="numberInput" placeholder="Enter a number">
-    <button id="generateButton">Generate and Sum</button>
+    <button id="generateButton">Roll D10</button>
     <p id="result"></p>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -117,7 +117,7 @@ color: lightgray;
                 if (!isNaN(inputNumber)) {
                     let sum = 0;
                     for (let i = 0; i < inputNumber; i++) {
-                        const randomNumber = Math.floor(Math.random() * 6) + 1;
+                        const randomNumber = Math.floor(Math.random() * 10) + 1;
                         sum += randomNumber;
                     }
                     resultElement.textContent = `Sum of ${inputNumber} random numbers: ${sum}`;
